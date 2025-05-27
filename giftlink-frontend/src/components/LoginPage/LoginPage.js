@@ -8,7 +8,8 @@ function LoginPage() {
     const [password, setPassword] = useState('');
 
     // insert code here to create handleLogin function and include console.log
-    const handleLogin = async () => {
+    const handleLogin = async (e) => {
+        e.preventDefault();
         console.log("Inside handleLogin");
     }
 
