@@ -32,7 +32,8 @@ function LoginPage() {
     const handleLogin = async () => {
       try {
           //first task
-        const res = await fetch(`/api/auth/login`, {
+          const url = `${urlConfig.backendUrl}/api/auth/login`;
+          const res = await fetch(url, {
             //Task 7: Set method
             method: 'POST',
             //Task 8: Set headers
